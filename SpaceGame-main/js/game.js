@@ -21,7 +21,7 @@ class Game {
         this.minSpeed;
         this.maxSpeed;
         this.eventTimer = 0;
-        this.eventInterval = 300; // Intervalo de 1 segundo para criação de inimigos
+        this.eventInterval = 400; // Intervalo de 1 segundo para criação de inimigos
         this.eventUpdate = false;
         this.touchStarX;
         this.swipeDistance = 50;
@@ -134,7 +134,7 @@ class Game {
         this.player.draw();
         this.enemys = this.enemys.filter(enemy => !enemy.markedForDeletion);
         this.enemys.forEach(enemy => {
-            enemy.update();
+            enemy.update(deltaTime);
             enemy.draw();
         });
 

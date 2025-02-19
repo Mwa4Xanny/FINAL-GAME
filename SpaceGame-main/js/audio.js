@@ -1,10 +1,11 @@
 class AudioControl {
-    constructor()   {
+    constructor(game) {
+        this.game = game;
         this.charge = document.getElementById('charge');
     }
 
-    play(sound)  {
-        sound.currentTime = 0;
-        sound.play();
+    play(audioElement) {
+        audioElement.currentTime = 0;
+        audioElement.play();
     }
 }
