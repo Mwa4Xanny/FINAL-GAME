@@ -21,7 +21,7 @@ class Game {
         this.minSpeed;
         this.maxSpeed;
         this.eventTimer = 0;
-        this.eventInterval = 1000; // Intervalo de 1 segundo para criação de inimigos
+        this.eventInterval = 1; // Intervalo de 1 segundo para criação de inimigos
         this.eventUpdate = false;
         this.touchStarX;
         this.swipeDistance = 50;
